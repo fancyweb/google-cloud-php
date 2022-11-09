@@ -22,18 +22,15 @@
 
 namespace Google\Cloud\BigQuery\Storage\Tests\Unit\V1;
 
+use Google\Cloud\BigQuery\Storage\V1\BigQueryWriteClient;
 use Google\ApiCore\ApiException;
-
 use Google\ApiCore\BidiStream;
 use Google\ApiCore\CredentialsWrapper;
 use Google\ApiCore\Testing\GeneratedTest;
-
 use Google\ApiCore\Testing\MockTransport;
-
 use Google\Cloud\BigQuery\Storage\V1\AppendRowsRequest;
 use Google\Cloud\BigQuery\Storage\V1\AppendRowsResponse;
 use Google\Cloud\BigQuery\Storage\V1\BatchCommitWriteStreamsResponse;
-use Google\Cloud\BigQuery\Storage\V1\BigQueryWriteClient;
 use Google\Cloud\BigQuery\Storage\V1\FinalizeWriteStreamResponse;
 use Google\Cloud\BigQuery\Storage\V1\FlushRowsResponse;
 use Google\Cloud\BigQuery\Storage\V1\WriteStream;
@@ -47,25 +44,19 @@ use stdClass;
  */
 class BigQueryWriteClientTest extends GeneratedTest
 {
-    /**
-     * @return TransportInterface
-     */
+    /** @return TransportInterface */
     private function createTransport($deserialize = null)
     {
         return new MockTransport($deserialize);
     }
 
-    /**
-     * @return CredentialsWrapper
-     */
+    /** @return CredentialsWrapper */
     private function createCredentials()
     {
         return $this->getMockBuilder(CredentialsWrapper::class)->disableOriginalConstructor()->getMock();
     }
 
-    /**
-     * @return BigQueryWriteClient
-     */
+    /** @return BigQueryWriteClient */
     private function createClient(array $options = [])
     {
         $options += [
@@ -74,9 +65,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         return new BigQueryWriteClient($options);
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function appendRowsTest()
     {
         $transport = $this->createTransport();
@@ -143,9 +132,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function appendRowsExceptionTest()
     {
         $transport = $this->createTransport();
@@ -178,9 +165,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function batchCommitWriteStreamsTest()
     {
         $transport = $this->createTransport();
@@ -208,9 +193,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function batchCommitWriteStreamsExceptionTest()
     {
         $transport = $this->createTransport();
@@ -244,9 +227,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function createWriteStreamTest()
     {
         $transport = $this->createTransport();
@@ -278,9 +259,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function createWriteStreamExceptionTest()
     {
         $transport = $this->createTransport();
@@ -314,9 +293,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function finalizeWriteStreamTest()
     {
         $transport = $this->createTransport();
@@ -343,9 +320,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function finalizeWriteStreamExceptionTest()
     {
         $transport = $this->createTransport();
@@ -378,9 +353,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function flushRowsTest()
     {
         $transport = $this->createTransport();
@@ -407,9 +380,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function flushRowsExceptionTest()
     {
         $transport = $this->createTransport();
@@ -442,9 +413,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function getWriteStreamTest()
     {
         $transport = $this->createTransport();
@@ -473,9 +442,7 @@ class BigQueryWriteClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function getWriteStreamExceptionTest()
     {
         $transport = $this->createTransport();

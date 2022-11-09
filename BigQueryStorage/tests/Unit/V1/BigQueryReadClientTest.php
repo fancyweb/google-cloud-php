@@ -22,14 +22,12 @@
 
 namespace Google\Cloud\BigQuery\Storage\Tests\Unit\V1;
 
+use Google\Cloud\BigQuery\Storage\V1\BigQueryReadClient;
 use Google\ApiCore\ApiException;
-
 use Google\ApiCore\CredentialsWrapper;
 use Google\ApiCore\ServerStream;
 use Google\ApiCore\Testing\GeneratedTest;
-
 use Google\ApiCore\Testing\MockTransport;
-use Google\Cloud\BigQuery\Storage\V1\BigQueryReadClient;
 use Google\Cloud\BigQuery\Storage\V1\ReadRowsResponse;
 use Google\Cloud\BigQuery\Storage\V1\ReadSession;
 use Google\Cloud\BigQuery\Storage\V1\SplitReadStreamResponse;
@@ -43,25 +41,19 @@ use stdClass;
  */
 class BigQueryReadClientTest extends GeneratedTest
 {
-    /**
-     * @return TransportInterface
-     */
+    /** @return TransportInterface */
     private function createTransport($deserialize = null)
     {
         return new MockTransport($deserialize);
     }
 
-    /**
-     * @return CredentialsWrapper
-     */
+    /** @return CredentialsWrapper */
     private function createCredentials()
     {
         return $this->getMockBuilder(CredentialsWrapper::class)->disableOriginalConstructor()->getMock();
     }
 
-    /**
-     * @return BigQueryReadClient
-     */
+    /** @return BigQueryReadClient */
     private function createClient(array $options = [])
     {
         $options += [
@@ -70,9 +62,7 @@ class BigQueryReadClientTest extends GeneratedTest
         return new BigQueryReadClient($options);
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function createReadSessionTest()
     {
         $transport = $this->createTransport();
@@ -108,9 +98,7 @@ class BigQueryReadClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function createReadSessionExceptionTest()
     {
         $transport = $this->createTransport();
@@ -144,9 +132,7 @@ class BigQueryReadClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function readRowsTest()
     {
         $transport = $this->createTransport();
@@ -187,9 +173,7 @@ class BigQueryReadClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function readRowsExceptionTest()
     {
         $transport = $this->createTransport();
@@ -224,9 +208,7 @@ class BigQueryReadClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function splitReadStreamTest()
     {
         $transport = $this->createTransport();
@@ -251,9 +233,7 @@ class BigQueryReadClientTest extends GeneratedTest
         $this->assertTrue($transport->isExhausted());
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function splitReadStreamExceptionTest()
     {
         $transport = $this->createTransport();
