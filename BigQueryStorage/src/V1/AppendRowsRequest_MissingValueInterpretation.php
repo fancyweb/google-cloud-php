@@ -12,5 +12,5 @@ if (false) {
     class AppendRowsRequest_MissingValueInterpretation {}
 }
 class_exists(AppendRowsRequest\MissingValueInterpretation::class);
-@trigger_error('Google\Cloud\BigQuery\Storage\V1\AppendRowsRequest_MissingValueInterpretation is deprecated and will be removed in the next major release. Use Google\Cloud\BigQuery\Storage\V1\AppendRowsRequest\MissingValueInterpretation instead', E_USER_DEPRECATED);
+@trigger_error('Google\Cloud\BigQuery\Storage\V1\AppendRowsRequest_MissingValueInterpretation is deprecated and will be removed in a future release. Use Google\Cloud\BigQuery\Storage\V1\AppendRowsRequest\MissingValueInterpretation instead', E_USER_DEPRECATED);
 

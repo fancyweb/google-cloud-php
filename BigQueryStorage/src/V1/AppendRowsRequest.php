@@ -49,6 +49,25 @@ class AppendRowsRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string trace_id = 6;</code>
      */
     private $trace_id = '';
+    /**
+     * A map to indicate how to interpret missing value for some fields. Missing
+     * values are fields present in user schema but missing in rows. The key is
+     * the field name. The value is the interpretation of missing values for the
+     * field.
+     * For example, a map {'foo': NULL_VALUE, 'bar': DEFAULT_VALUE} means all
+     * missing values in field foo are interpreted as NULL, all missing values in
+     * field bar are interpreted as the default value of field bar in table
+     * schema.
+     * If a field is not in this map and has missing values, the missing values
+     * in this field are interpreted as NULL.
+     * This field only applies to the current request, it won't affect other
+     * requests on the connection.
+     * Currently, field name can only be top-level column name, can't be a struct
+     * field path like 'foo.bar'.
+     *
+     * Generated from protobuf field <code>map<string, .google.cloud.bigquery.storage.v1.AppendRowsRequest.MissingValueInterpretation> missing_value_interpretations = 7;</code>
+     */
+    private $missing_value_interpretations;
     protected $rows;
 
     /**
@@ -76,6 +95,21 @@ class AppendRowsRequest extends \Google\Protobuf\Internal\Message
      *     @type string $trace_id
      *           Id set by client to annotate its identity. Only initial request setting is
      *           respected.
+     *     @type array|\Google\Protobuf\Internal\MapField $missing_value_interpretations
+     *           A map to indicate how to interpret missing value for some fields. Missing
+     *           values are fields present in user schema but missing in rows. The key is
+     *           the field name. The value is the interpretation of missing values for the
+     *           field.
+     *           For example, a map {'foo': NULL_VALUE, 'bar': DEFAULT_VALUE} means all
+     *           missing values in field foo are interpreted as NULL, all missing values in
+     *           field bar are interpreted as the default value of field bar in table
+     *           schema.
+     *           If a field is not in this map and has missing values, the missing values
+     *           in this field are interpreted as NULL.
+     *           This field only applies to the current request, it won't affect other
+     *           requests on the connection.
+     *           Currently, field name can only be top-level column name, can't be a struct
+     *           field path like 'foo.bar'.
      * }
      */
     public function __construct($data = NULL) {
@@ -253,6 +287,58 @@ class AppendRowsRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->trace_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * A map to indicate how to interpret missing value for some fields. Missing
+     * values are fields present in user schema but missing in rows. The key is
+     * the field name. The value is the interpretation of missing values for the
+     * field.
+     * For example, a map {'foo': NULL_VALUE, 'bar': DEFAULT_VALUE} means all
+     * missing values in field foo are interpreted as NULL, all missing values in
+     * field bar are interpreted as the default value of field bar in table
+     * schema.
+     * If a field is not in this map and has missing values, the missing values
+     * in this field are interpreted as NULL.
+     * This field only applies to the current request, it won't affect other
+     * requests on the connection.
+     * Currently, field name can only be top-level column name, can't be a struct
+     * field path like 'foo.bar'.
+     *
+     * Generated from protobuf field <code>map<string, .google.cloud.bigquery.storage.v1.AppendRowsRequest.MissingValueInterpretation> missing_value_interpretations = 7;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getMissingValueInterpretations()
+    {
+        return $this->missing_value_interpretations;
+    }
+
+    /**
+     * A map to indicate how to interpret missing value for some fields. Missing
+     * values are fields present in user schema but missing in rows. The key is
+     * the field name. The value is the interpretation of missing values for the
+     * field.
+     * For example, a map {'foo': NULL_VALUE, 'bar': DEFAULT_VALUE} means all
+     * missing values in field foo are interpreted as NULL, all missing values in
+     * field bar are interpreted as the default value of field bar in table
+     * schema.
+     * If a field is not in this map and has missing values, the missing values
+     * in this field are interpreted as NULL.
+     * This field only applies to the current request, it won't affect other
+     * requests on the connection.
+     * Currently, field name can only be top-level column name, can't be a struct
+     * field path like 'foo.bar'.
+     *
+     * Generated from protobuf field <code>map<string, .google.cloud.bigquery.storage.v1.AppendRowsRequest.MissingValueInterpretation> missing_value_interpretations = 7;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setMissingValueInterpretations($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Cloud\BigQuery\Storage\V1\AppendRowsRequest\MissingValueInterpretation::class);
+        $this->missing_value_interpretations = $arr;
 
         return $this;
     }
