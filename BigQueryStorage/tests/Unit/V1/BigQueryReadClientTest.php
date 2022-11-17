@@ -22,12 +22,12 @@
 
 namespace Google\Cloud\BigQuery\Storage\Tests\Unit\V1;
 
-use Google\Cloud\BigQuery\Storage\V1\BigQueryReadClient;
 use Google\ApiCore\ApiException;
 use Google\ApiCore\CredentialsWrapper;
 use Google\ApiCore\ServerStream;
 use Google\ApiCore\Testing\GeneratedTest;
 use Google\ApiCore\Testing\MockTransport;
+use Google\Cloud\BigQuery\Storage\V1\BigQueryReadClient;
 use Google\Cloud\BigQuery\Storage\V1\ReadRowsResponse;
 use Google\Cloud\BigQuery\Storage\V1\ReadSession;
 use Google\Cloud\BigQuery\Storage\V1\SplitReadStreamResponse;

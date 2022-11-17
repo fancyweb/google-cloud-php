@@ -22,7 +22,6 @@
 
 namespace Google\Cloud\BigQuery\Storage\Tests\Unit\V1;
 
-use Google\Cloud\BigQuery\Storage\V1\BigQueryWriteClient;
 use Google\ApiCore\ApiException;
 use Google\ApiCore\BidiStream;
 use Google\ApiCore\CredentialsWrapper;
@@ -31,6 +30,7 @@ use Google\ApiCore\Testing\MockTransport;
 use Google\Cloud\BigQuery\Storage\V1\AppendRowsRequest;
 use Google\Cloud\BigQuery\Storage\V1\AppendRowsResponse;
 use Google\Cloud\BigQuery\Storage\V1\BatchCommitWriteStreamsResponse;
+use Google\Cloud\BigQuery\Storage\V1\BigQueryWriteClient;
 use Google\Cloud\BigQuery\Storage\V1\FinalizeWriteStreamResponse;
 use Google\Cloud\BigQuery\Storage\V1\FlushRowsResponse;
 use Google\Cloud\BigQuery\Storage\V1\WriteStream;
