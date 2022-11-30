@@ -32,7 +32,7 @@ use Google\Protobuf\FieldMask;
  * Updates a Model.
  *
  * @param string $modelDisplayName The display name of the Model.
- *                                 The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                 The name can be up to 128 characters long and can consist of any UTF-8
  *                                 characters.
  */
 function update_model_sample(string $modelDisplayName): void

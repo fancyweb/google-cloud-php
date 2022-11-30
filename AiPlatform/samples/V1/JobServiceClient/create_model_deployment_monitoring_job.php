@@ -39,7 +39,7 @@ use Google\Protobuf\Duration;
  *                                                        Format: `projects/{project}/locations/{location}`
  *                                                        Please see {@see JobServiceClient::locationName()} for help formatting this field.
  * @param string $modelDeploymentMonitoringJobDisplayName The user-defined name of the ModelDeploymentMonitoringJob.
- *                                                        The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                                        The name can be up to 128 characters long and can consist of any UTF-8
  *                                                        characters.
  *                                                        Display name of a ModelDeploymentMonitoringJob.
  * @param string $formattedEndpoint                       Endpoint resource name.

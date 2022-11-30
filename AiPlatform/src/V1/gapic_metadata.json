@@ -178,6 +178,11 @@
                                 "streamingReadFeatureValues"
                             ]
                         },
+                        "WriteFeatureValues": {
+                            "methods": [
+                                "writeFeatureValues"
+                            ]
+                        },
                         "GetLocation": {
                             "methods": [
                                 "getLocation"

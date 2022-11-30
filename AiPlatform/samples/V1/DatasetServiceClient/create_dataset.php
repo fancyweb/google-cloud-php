@@ -37,7 +37,7 @@ use Google\Rpc\Status;
  *                                         Format: `projects/{project}/locations/{location}`
  *                                         Please see {@see DatasetServiceClient::locationName()} for help formatting this field.
  * @param string $datasetDisplayName       The user-defined name of the Dataset.
- *                                         The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                         The name can be up to 128 characters long and can consist of any UTF-8
  *                                         characters.
  * @param string $datasetMetadataSchemaUri Points to a YAML file stored on Google Cloud Storage describing additional
  *                                         information about the Dataset.

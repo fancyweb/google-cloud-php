@@ -37,7 +37,7 @@ use Google\Cloud\AIPlatform\V1\WorkerPoolSpec;
  *                                     Format: `projects/{project}/locations/{location}`
  *                                     Please see {@see JobServiceClient::locationName()} for help formatting this field.
  * @param string $customJobDisplayName The display name of the CustomJob.
- *                                     The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                     The name can be up to 128 characters long and can consist of any UTF-8
  *                                     characters.
  */
 function create_custom_job_sample(string $formattedParent, string $customJobDisplayName): void
