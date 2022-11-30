@@ -102,7 +102,7 @@ class BatchPredictionJob extends \Google\Protobuf\Internal\Message
      * The service account that the DeployedModel's container runs as. If not
      * specified, a system generated one will be used, which
      * has minimal permissions and the custom container, if used, may not have
-     * enough permission to access other GCP resources.
+     * enough permission to access other Google Cloud resources.
      * Users deploying the Model must have the `iam.serviceAccounts.actAs`
      * permission on this service account.
      *
@@ -168,7 +168,7 @@ class BatchPredictionJob extends \Google\Protobuf\Internal\Message
      * Output only. Partial failures encountered.
      * For example, single files that can't be read.
      * This field never exceeds 20 entries.
-     * Status details fields contain standard GCP error details.
+     * Status details fields contain standard Google Cloud error details.
      *
      * Generated from protobuf field <code>repeated .google.rpc.Status partial_failures = 12 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
      */
@@ -288,7 +288,7 @@ class BatchPredictionJob extends \Google\Protobuf\Internal\Message
      *           The service account that the DeployedModel's container runs as. If not
      *           specified, a system generated one will be used, which
      *           has minimal permissions and the custom container, if used, may not have
-     *           enough permission to access other GCP resources.
+     *           enough permission to access other Google Cloud resources.
      *           Users deploying the Model must have the `iam.serviceAccounts.actAs`
      *           permission on this service account.
      *     @type \Google\Cloud\AIPlatform\V1\ManualBatchTuningParameters $manual_batch_tuning_parameters
@@ -326,7 +326,7 @@ class BatchPredictionJob extends \Google\Protobuf\Internal\Message
      *           Output only. Partial failures encountered.
      *           For example, single files that can't be read.
      *           This field never exceeds 20 entries.
-     *           Status details fields contain standard GCP error details.
+     *           Status details fields contain standard Google Cloud error details.
      *     @type \Google\Cloud\AIPlatform\V1\ResourcesConsumed $resources_consumed
      *           Output only. Information about resources that had been consumed by this job.
      *           Provided in real time at best effort basis, as well as a final value
@@ -702,7 +702,7 @@ class BatchPredictionJob extends \Google\Protobuf\Internal\Message
      * The service account that the DeployedModel's container runs as. If not
      * specified, a system generated one will be used, which
      * has minimal permissions and the custom container, if used, may not have
-     * enough permission to access other GCP resources.
+     * enough permission to access other Google Cloud resources.
      * Users deploying the Model must have the `iam.serviceAccounts.actAs`
      * permission on this service account.
      *
@@ -718,7 +718,7 @@ class BatchPredictionJob extends \Google\Protobuf\Internal\Message
      * The service account that the DeployedModel's container runs as. If not
      * specified, a system generated one will be used, which
      * has minimal permissions and the custom container, if used, may not have
-     * enough permission to access other GCP resources.
+     * enough permission to access other Google Cloud resources.
      * Users deploying the Model must have the `iam.serviceAccounts.actAs`
      * permission on this service account.
      *
@@ -972,7 +972,7 @@ class BatchPredictionJob extends \Google\Protobuf\Internal\Message
      * Output only. Partial failures encountered.
      * For example, single files that can't be read.
      * This field never exceeds 20 entries.
-     * Status details fields contain standard GCP error details.
+     * Status details fields contain standard Google Cloud error details.
      *
      * Generated from protobuf field <code>repeated .google.rpc.Status partial_failures = 12 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
      * @return \Google\Protobuf\Internal\RepeatedField
@@ -986,7 +986,7 @@ class BatchPredictionJob extends \Google\Protobuf\Internal\Message
      * Output only. Partial failures encountered.
      * For example, single files that can't be read.
      * This field never exceeds 20 entries.
-     * Status details fields contain standard GCP error details.
+     * Status details fields contain standard Google Cloud error details.
      *
      * Generated from protobuf field <code>repeated .google.rpc.Status partial_failures = 12 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
      * @param array<\Google\Rpc\Status>|\Google\Protobuf\Internal\RepeatedField $var

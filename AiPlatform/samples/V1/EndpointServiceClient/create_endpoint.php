@@ -36,7 +36,7 @@ use Google\Rpc\Status;
  *                                    Format: `projects/{project}/locations/{location}`
  *                                    Please see {@see EndpointServiceClient::locationName()} for help formatting this field.
  * @param string $endpointDisplayName The display name of the Endpoint.
- *                                    The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                    The name can be up to 128 characters long and can consist of any UTF-8
  *                                    characters.
  */
 function create_endpoint_sample(string $formattedParent, string $endpointDisplayName): void

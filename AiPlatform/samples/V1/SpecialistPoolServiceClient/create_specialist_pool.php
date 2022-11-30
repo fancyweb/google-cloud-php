@@ -37,7 +37,7 @@ use Google\Rpc\Status;
  *                                          {@see SpecialistPoolServiceClient::locationName()} for help formatting this field.
  * @param string $specialistPoolName        The resource name of the SpecialistPool.
  * @param string $specialistPoolDisplayName The user-defined name of the SpecialistPool.
- *                                          The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                          The name can be up to 128 characters long and can consist of any UTF-8
  *                                          characters.
  *                                          This field should be unique on project-level.
  */

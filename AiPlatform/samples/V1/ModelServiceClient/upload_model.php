@@ -37,7 +37,7 @@ use Google\Rpc\Status;
  *                                 Format: `projects/{project}/locations/{location}`
  *                                 Please see {@see ModelServiceClient::locationName()} for help formatting this field.
  * @param string $modelDisplayName The display name of the Model.
- *                                 The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                 The name can be up to 128 characters long and can consist of any UTF-8
  *                                 characters.
  */
 function upload_model_sample(string $formattedParent, string $modelDisplayName): void

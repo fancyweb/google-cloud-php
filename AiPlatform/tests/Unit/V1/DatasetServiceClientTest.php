@@ -107,12 +107,14 @@ class DatasetServiceClientTest extends GeneratedTest
         $description = 'description-1724546052';
         $metadataSchemaUri = 'metadataSchemaUri-152319778';
         $etag = 'etag3123477';
+        $metadataArtifact = 'metadataArtifact2087706850';
         $expectedResponse = new Dataset();
         $expectedResponse->setName($name);
         $expectedResponse->setDisplayName($displayName);
         $expectedResponse->setDescription($description);
         $expectedResponse->setMetadataSchemaUri($metadataSchemaUri);
         $expectedResponse->setEtag($etag);
+        $expectedResponse->setMetadataArtifact($metadataArtifact);
         $anyResponse = new Any();
         $anyResponse->setValue($expectedResponse->serializeToString());
         $completeOperation = new Operation();
@@ -540,12 +542,14 @@ class DatasetServiceClientTest extends GeneratedTest
         $description = 'description-1724546052';
         $metadataSchemaUri = 'metadataSchemaUri-152319778';
         $etag = 'etag3123477';
+        $metadataArtifact = 'metadataArtifact2087706850';
         $expectedResponse = new Dataset();
         $expectedResponse->setName($name2);
         $expectedResponse->setDisplayName($displayName);
         $expectedResponse->setDescription($description);
         $expectedResponse->setMetadataSchemaUri($metadataSchemaUri);
         $expectedResponse->setEtag($etag);
+        $expectedResponse->setMetadataArtifact($metadataArtifact);
         $transport->addResponse($expectedResponse);
         // Mock request
         $formattedName = $gapicClient->datasetName('[PROJECT]', '[LOCATION]', '[DATASET]');
@@ -1001,12 +1005,14 @@ class DatasetServiceClientTest extends GeneratedTest
         $description = 'description-1724546052';
         $metadataSchemaUri = 'metadataSchemaUri-152319778';
         $etag = 'etag3123477';
+        $metadataArtifact = 'metadataArtifact2087706850';
         $expectedResponse = new Dataset();
         $expectedResponse->setName($name);
         $expectedResponse->setDisplayName($displayName);
         $expectedResponse->setDescription($description);
         $expectedResponse->setMetadataSchemaUri($metadataSchemaUri);
         $expectedResponse->setEtag($etag);
+        $expectedResponse->setMetadataArtifact($metadataArtifact);
         $transport->addResponse($expectedResponse);
         // Mock request
         $dataset = new Dataset();

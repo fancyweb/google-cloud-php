@@ -40,7 +40,7 @@ use Google\Cloud\AIPlatform\V1\WorkerPoolSpec;
  *                                                                      Format: `projects/{project}/locations/{location}`
  *                                                                      Please see {@see JobServiceClient::locationName()} for help formatting this field.
  * @param string $hyperparameterTuningJobDisplayName                    The display name of the HyperparameterTuningJob.
- *                                                                      The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                                                      The name can be up to 128 characters long and can consist of any UTF-8
  *                                                                      characters.
  * @param string $hyperparameterTuningJobStudySpecMetricsMetricId       The ID of the metric. Must not contain whitespaces and must be unique
  *                                                                      amongst all MetricSpecs.

@@ -35,7 +35,7 @@ use Google\Protobuf\Value;
  *                                               Format: `projects/{project}/locations/{location}`
  *                                               Please see {@see JobServiceClient::locationName()} for help formatting this field.
  * @param string $dataLabelingJobDisplayName     The user-defined name of the DataLabelingJob.
- *                                               The name can be up to 128 characters long and can be consist of any UTF-8
+ *                                               The name can be up to 128 characters long and can consist of any UTF-8
  *                                               characters.
  *                                               Display name of a DataLabelingJob.
  * @param string $formattedDatasetsElement       Dataset resource names. Right now we only support labeling from a single
