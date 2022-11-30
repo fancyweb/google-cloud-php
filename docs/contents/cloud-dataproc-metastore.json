@@ -11,12 +11,24 @@
             "type": "dataprocmetastore\/v1\/dataprocmetastoreclient"
         },
         {
+            "title": "DataprocMetastoreFederationClient (v1)",
+            "type": "dataprocmetastore\/v1\/dataprocmetastorefederationclient"
+        },
+        {
             "title": "DataprocMetastoreClient (v1alpha)",
             "type": "dataprocmetastore\/v1alpha\/dataprocmetastoreclient"
         },
         {
+            "title": "DataprocMetastoreFederationClient (v1alpha)",
+            "type": "dataprocmetastore\/v1alpha\/dataprocmetastorefederationclient"
+        },
+        {
             "title": "DataprocMetastoreClient (v1beta)",
             "type": "dataprocmetastore\/v1beta\/dataprocmetastoreclient"
+        },
+        {
+            "title": "DataprocMetastoreFederationClient (v1beta)",
+            "type": "dataprocmetastore\/v1beta\/dataprocmetastorefederationclient"
         }
     ],
     "pattern": "dataprocmetastore\/\\w{1,}"
